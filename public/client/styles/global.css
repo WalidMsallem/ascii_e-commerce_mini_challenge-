@@ -100,6 +100,7 @@ body {
 .sort-by__options {
   display: flex;
   flex-direction: column;
+  background-color: #ececec;
 }
 .sort-by__button {
   border: none;
