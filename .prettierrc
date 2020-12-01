@@ -1,0 +1,8 @@
+{
+  "tabWidth": 2,
+  "useTabs": false,
+  "prettier.jsxSingleQuote": true,
+  "prettier.useTabs": false,
+  "prettier.jsonEnable": [],
+  "prettier.openOutput": false
+}

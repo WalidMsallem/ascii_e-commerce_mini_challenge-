@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  background: url("https://res.cloudinary.com/jasonheecs/image/upload/v1480353347/construction/bg.jpg");
+  font-family: "Poppins", sans-serif;
+}
+
+.product__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+}
+.ant-card-body {
+  background-color: #49b9ec;
+}
+.sz-18 {
+  font-size: 18px;
+}
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 10px;
+  margin: 15px 30px;
+  background: #ececec;
+}
+
+.product__container:hover .product__face {
+  animation: var(--face-animation-intro) 250ms,
+    var(--face-animation) 1000ms 250ms infinite;
+  animation-timing-function: ease, cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+.product__container:hover .product__details {
+  opacity: 1;
+}
+.product__face {
+  display: flex;
+  min-height: 30vh;
+  justify-content: center;
+  align-items: center;
+}
+.product__face__content {
+  white-space: nowrap;
+  font-weight: bold;
+  color: #49b9ec;
+}
+.ant-card-body {
+  padding: 8px 10px 20px 10px;
+}
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.loading {
+  text-align: center;
+  margin: 40px;
+  font-size: 28px;
+  animation: loading 2s infinite;
+}
+
+.header__options {
+  display: flex;
+  align-items: center;
+}
+.end-of-products {
+  text-align: center;
+  margin: 40px;
+  font-size: 28px;
+}
+.ads_img_cont {
+  /* max-width: 300px;
+        height: 243px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ads_img_cont img {
+  /* width: 300px; */
+}
+
+.ads_img {
+  width: 100%;
+}
+.disp-flex {
+  display: flex;
+}
+.sort-by__options {
+  display: flex;
+  flex-direction: column;
+}
+.sort-by__button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: inherit;
+  font-size: inherit;
+  padding: 5px 15px;
+  border-radius: 3px;
+  text-align: left;
+  cursor: pointer;
+}
+.sort-by__button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.ads_content {
+  min-height: 73px;
+}
